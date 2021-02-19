@@ -1,11 +1,11 @@
     // TRICKLE STYLE BUTTON ON ALL ARTICLE BLOCKS
     // put in article.json
-    "_trickle": {
+    "_trickle2": {
         "_isEnabled": true
     }
 
     // Manual Configuration Options
-    "_trickle": {
+    "_trickle2": {
         "_isEnabled": true,
         "_autoScroll": true,
         "_scrollDuration": 500,
@@ -37,6 +37,6 @@
     // Override which completion data attribute is used to test when the
     // trickle button should be displayed
     // Put in config.json
-    "_trickle": {
+    "_trickle2": {
         "_completionAttribute": "_isInteractionComplete|_isComplete", //(default=_isComplete)
     }
