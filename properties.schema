@@ -65,6 +65,7 @@
                 "_autoScroll": {
                   "type": "boolean",
                   "required": false,
+                  "default": true,
                   "title": "Scroll Automatically",
                   "inputType": "Checkbox",
                   "validators": []
@@ -263,6 +264,7 @@
                 "_autoScroll": {
                   "type": "boolean",
                   "required": false,
+                  "default": true,
                   "title": "Scroll Automatically",
                   "inputType": "Checkbox",
                   "validators": []
