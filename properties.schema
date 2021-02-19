@@ -111,7 +111,7 @@
                       "type": "string",
                       "required": false,
                       "enum": ["hidden", "visible"],
-                      "default": "hidden",
+                      "default": "visible",
                       "title": "Initial Visibility",
                       "inputType": {"type": "Select", "options":["hidden", "visible"]},
                       "validators": ["required"],
@@ -302,7 +302,7 @@
                       "type": "string",
                       "required": false,
                       "enum": ["hidden", "visible"],
-                      "default": "hidden",
+                      "default": "visible",
                       "title": "Initial Visibility",
                       "inputType": {"type": "Select", "options":["hidden", "visible"]},
                       "help": "Set button visibility before completion"
