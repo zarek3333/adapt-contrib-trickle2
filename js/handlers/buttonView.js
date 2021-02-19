@@ -267,7 +267,7 @@ define([
         Adapt.trickle.scroll(this.model);
       }
 
-      var trickle = this.model.get("_trickle");
+      var trickle = this.model.get("_trickle2");
       switch (trickle._button._styleAfterClick) {
       case "hidden":
         this.allowVisible = false;
