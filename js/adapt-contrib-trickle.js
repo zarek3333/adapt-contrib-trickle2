@@ -38,7 +38,7 @@ define([
     },
 
     getModelConfig: function(model) {
-      return model.get('_trickle');
+      return model.get('_trickle2');
     },
 
     getCompletionAttribute: function() {
@@ -48,7 +48,7 @@ define([
     },
 
     setModelConfig: function(model, config) {
-      return model.set('_trickle', config);
+      return model.set('_trickle2', config);
     },
 
     setupListeners: function() {
@@ -111,7 +111,7 @@ define([
 
       if (isAutoScrollOff) return;
 
-      var duration = fromModel.get('_trickle')._scrollDuration || 500;
+      var duration = fromModel.get('_trickle2')._scrollDuration || 500;
       Adapt.scrollTo('.' + scrollToId, { duration: duration });
     },
 
