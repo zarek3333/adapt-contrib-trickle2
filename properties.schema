@@ -171,11 +171,29 @@
                       "validators": [],
                       "translatable": true
                     },
+                    "_ariaText": {
+                      "type": "string",
+                      "required": false,
+                      "default": "Select the Tab button, then use Enter to continue.",
+                      "title": "Accessible aria label introduction to the trickle button",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    },
                     "disabledText": {
                       "type": "string",
                       "required": false,
-                      "default": "Continue",
+                      "default": "You must complete the activity above to proceed to the next section.",
                       "title": "Disabled Button Text",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    },
+                    "_ariaDisabled": {
+                      "type": "string",
+                      "required": false,
+                      "default": "You must press Shift Tab to go back to the activity and complete it in order to proceed. For a learning question, select Enter to submit your answer to continue.",
+                      "title": "Accessible aria label disabled trickle button introduction",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
@@ -361,11 +379,29 @@
                       "validators": [],
                       "translatable": true
                     },
+                    "_ariaText": {
+                      "type": "string",
+                      "required": false,
+                      "default": "Select the Tab button, then use Enter to continue.",
+                      "title": "Accessible aria label introduction to the trickle button",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    },
                     "disabledText": {
                       "type": "string",
                       "required": false,
-                      "default": "Continue",
+                      "default": "You must complete the activity above to proceed to the next section.",
                       "title": "Disabled Button Text",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    },
+                    "_ariaDisabled": {
+                      "type": "string",
+                      "required": false,
+                      "default": "You must press Shift Tab to go back to the activity and complete it in order to proceed. For a learning question, select Enter to submit your answer to continue.",
+                      "title": "Accessible aria label disabled trickle button introduction",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
