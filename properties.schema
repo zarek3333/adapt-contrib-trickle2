@@ -174,7 +174,7 @@
                     "_ariaText": {
                       "type": "string",
                       "required": false,
-                      "default": "Select the Tab button, then use Enter to continue.",
+                      "default": "Press the Tab button, then use Enter to continue.",
                       "title": "Accessible aria label introduction to the trickle button",
                       "inputType": "Text",
                       "validators": [],
@@ -192,7 +192,7 @@
                     "_ariaDisabled": {
                       "type": "string",
                       "required": false,
-                      "default": "You must press Shift Tab to go back to the activity and complete it in order to proceed. For a learning question, select Enter to submit your answer to continue.",
+                      "default": "You must press the Shift and Tab buttons together to go back to the activity and complete it in order to proceed. For a learning question, select Enter to submit your answer to continue.",
                       "title": "Accessible aria label disabled trickle button introduction",
                       "inputType": "Text",
                       "validators": [],
@@ -382,7 +382,7 @@
                     "_ariaText": {
                       "type": "string",
                       "required": false,
-                      "default": "Select the Tab button, then use Enter to continue.",
+                      "default": "Press the Tab button, then use Enter to continue.",
                       "title": "Accessible aria label introduction to the trickle button",
                       "inputType": "Text",
                       "validators": [],
@@ -400,7 +400,7 @@
                     "_ariaDisabled": {
                       "type": "string",
                       "required": false,
-                      "default": "You must press Shift Tab to go back to the activity and complete it in order to proceed. For a learning question, select Enter to submit your answer to continue.",
+                      "default": "You must press the Shift and Tab buttons together to go back to the activity and complete it in order to proceed. For a learning question, select Enter to submit your answer to continue.",
                       "title": "Accessible aria label disabled trickle button introduction",
                       "inputType": "Text",
                       "validators": [],
