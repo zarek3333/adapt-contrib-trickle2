@@ -10,6 +10,17 @@
   &__btn {
     display: block;
     margin: auto;
+    
+    &[disabled="disabled"] {
+          color: transparent !important;
+          line-height: 0 !important;
+
+          &:before {
+              color: @disabled-inverted !important;
+              display: block;
+              line-height: 120%;
+          }
+      }
   }
 
   &.is-full-width &__btn {
