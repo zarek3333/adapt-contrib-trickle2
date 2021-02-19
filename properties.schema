@@ -170,6 +170,15 @@
                       "validators": [],
                       "translatable": true
                     },
+                    "disabledText": {
+                      "type": "string",
+                      "required": false,
+                      "default": "Continue",
+                      "title": "Disabled Button Text",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    },
                     "startText": {
                       "type": "string",
                       "required": false,
@@ -346,6 +355,15 @@
                       "required": false,
                       "default": "Continue",
                       "title": "Button Text",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    },
+                    "disabledText": {
+                      "type": "string",
+                      "required": false,
+                      "default": "Continue",
+                      "title": "Disabled Button Text",
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
