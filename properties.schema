@@ -49,7 +49,7 @@
         "article": {
           "type": "object",
           "properties": {
-            "_trickle": {
+            "_trickle2": {
               "type": "object",
               "required": false,
               "legend": "Trickle",
@@ -57,6 +57,7 @@
                 "_isEnabled": {
                   "type": "boolean",
                   "required": false,
+                  "default": false,
                   "title": "Enable Trickle",
                   "inputType": "Checkbox",
                   "validators": []
@@ -137,7 +138,7 @@
                     "_autoHide": {
                       "type": "boolean",
                       "required": false,
-                      "default": false,
+                      "default": true,
                       "title": "Hide on Scroll",
                       "inputType": "Checkbox",
                       "validators": [],
@@ -237,7 +238,7 @@
         "block": {
           "type": "object",
           "properties": {
-            "_trickle": {
+            "_trickle2": {
               "type": "object",
               "required": false,
               "legend": "Trickle",
@@ -317,7 +318,7 @@
                     "_autoHide": {
                       "type": "boolean",
                       "required": false,
-                      "default": false,
+                      "default": true,
                       "title": "Hide on Scroll",
                       "inputType": "Checkbox",
                       "validators": [],
