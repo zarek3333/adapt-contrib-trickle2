@@ -21,7 +21,7 @@
         "config": {
           "type": "object",
           "properties": {
-            "_trickle": {
+            "_trickle2": {
               "type": "object",
               "required": false,
               "legend": "Trickle",
