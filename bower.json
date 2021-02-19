@@ -1,12 +1,12 @@
 {
-  "name": "adapt-contrib-trickle",
-  "version": "4.0.4",
+  "name": "adapt-contrib-trickle2",
+  "version": "4.0.5",
   "framework": ">=5",
   "homepage": "https://github.com/adaptlearning/adapt-contrib-trickle",
   "issues": "https://github.com/adaptlearning/adapt_framework/issues/new",
-  "extension" : "trickle",
-  "displayName" : "Trickle",
-  "description": "A vertical locking extension",
+  "extension" : "trickle2",
+  "displayName" : "Trickle - DISABLED BY DEFAULT",
+  "description": "Unlike the original trickle this one is disabled by default until you enable it.",
   "main": "/js/adapt-contrib-trickle.js",
   "keywords": [
     "adapt-plugin",
