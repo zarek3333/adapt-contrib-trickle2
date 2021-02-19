@@ -150,7 +150,7 @@ define([
         trickle._button._isDisabled = true;
         var mytrackid = this.model.get("_id");
         window.setTimeout(function(){
-            this.$(".trickle-" + mytrackid + " span.aria-label").text(trickle._button._ariaText);
+            this.$(".trickle." + mytrackid + " .aria-label").text(trickle._button._ariaText);
         }, 1345);
         // move focus forward if it's on the aria-label
         if (document.activeElement instanceof HTMLElement && document.activeElement.isSameNode(this.$('.aria-label')[0])) {
