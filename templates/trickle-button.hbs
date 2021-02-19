@@ -19,11 +19,12 @@
             {{#if _trickle2._button.finalText}}
               {{{_trickle2._button.finalText}}}
             {{else}}
-              {{#if _trickle2._button._isDisabled}}
-		        			{{{_trickle2._button.disabledText}}}
-		        		{{else}}
-		        			{{{_trickle2._button.text}}}
-		        		{{/if}}
+              	{{#if _trickle2._button._isDisabled}}
+			<style>.trickle-button-component .trickle-button-inner button[disabled="disabled"]:before { content: "{{{_trickle2._button.disabledText}}}"; }</style>
+		        {{{_trickle2._button.text}}}
+		{{else}}
+			{{{_trickle2._button.text}}}
+		{{/if}}
             {{/if}}
           {{else}}
             {{#if _trickle2._isStart}}
@@ -32,10 +33,11 @@
               {{/if}}
             {{else}}
               {{#if _trickle2._button._isDisabled}}
-		        			{{{_trickle2._button.disabledText}}}
-		        		{{else}}
-		        			{{{_trickle2._button.text}}}
-		        		{{/if}}
+			<style>.trickle-button-component .trickle-button-inner button[disabled="disabled"]:before { content: "{{{_trickle2._button.disabledText}}}"; }</style>
+		        {{{_trickle2._button.text}}}
+		{{else}}
+			{{{_trickle2._button.text}}}
+		{{/if}}
             {{/if}}
           {{/if}}
         </div>
