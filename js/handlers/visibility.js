@@ -33,10 +33,7 @@ define([
       this.isStepLocking = true;
       this.trickleModel = view.model;
       Adapt.trigger("trickle:visibility");
-      window.setTimeout(function(){
-        Adapt.trigger("trickle:hidden");
-      }, 1340);
-      
+      Adapt.trigger("trickle:hidden");
     },
 
     onVisibility: function() {
@@ -138,7 +135,6 @@ define([
     },
 
     onFinished: function() {
-
       var descendantsParentFirst = Adapt.trickle.pageView.descendantsParentFirst;
       descendantsParentFirst.forEach(function(descendant) {
         descendant.set("_isVisible", true, {pluginName:"trickle"});
@@ -152,7 +148,6 @@ define([
           componentModel.set("_isVisible", true, {pluginName:"trickle"});
         });
       });
-
     },
 
     onRemove: function() {
