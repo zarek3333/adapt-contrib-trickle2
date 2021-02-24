@@ -63,56 +63,59 @@ define([
     },
 
     scroll: function(fromModel) {
-      // Wait for model visibility to handle
+      _.delay(_.bind(function() {
+        // Wait for model visibility to handle
 
-      if (!this.shouldScrollPage(fromModel)) return;
+        if (!this.shouldScrollPage(fromModel)) return;
 
-      fromModel.set('_isTrickleAutoScrollComplete', true);
+        fromModel.set('_isTrickleAutoScrollComplete', true);
 
-      var trickle = Adapt.trickle.getModelConfig(fromModel);
-      var isAutoScrollOff = !trickle._autoScroll;
-      var hasTrickleButton = trickle._button._isEnabled;
-      if (isAutoScrollOff && !hasTrickleButton) {
-        return;
-      }
+        var trickle = Adapt.trickle.getModelConfig(fromModel);
+        var isAutoScrollOff = !trickle._autoScroll;
+        var hasTrickleButton = trickle._button._isEnabled;
+        if (isAutoScrollOff && !hasTrickleButton) {
+          return;
+        }
 
-      var scrollTo = trickle._scrollTo;
-      if (scrollTo === undefined) scrollTo = '@block +1';
+        var scrollTo = trickle._scrollTo;
+        if (scrollTo === undefined) scrollTo = '@block +1';
 
-      var scrollToId = '';
-      switch (scrollTo.substr(0,1)) {
-        case '@':
-          // NAVIGATE BY RELATIVE TYPE
+        var scrollToId = '';
+        switch (scrollTo.substr(0,1)) {
+          case '@':
+            // NAVIGATE BY RELATIVE TYPE
 
-          // Allows trickle to scroll to a sibling / cousin component
-          // relative to the current trickle item
-          var relativeModel = fromModel.findRelativeModel(scrollTo, {
-            filter: function(model) {
-              return model.get('_isAvailable');
-            }
-          });
+            // Allows trickle to scroll to a sibling / cousin component
+            // relative to the current trickle item
+            var relativeModel = fromModel.findRelativeModel(scrollTo, {
+              filter: function(model) {
+                return model.get('_isAvailable');
+              }
+            });
 
-          if (relativeModel === undefined) return;
-          scrollToId = relativeModel.get('_id');
-          break;
-        case '.':
-          // NAVIGATE BY CLASS
-          scrollToId = scrollTo.substr(1, scrollTo.length-1);
-          break;
-        default:
-          scrollToId = scrollTo;
-      }
+            if (relativeModel === undefined) return;
+            scrollToId = relativeModel.get('_id');
+            break;
+          case '.':
+            // NAVIGATE BY CLASS
+            scrollToId = scrollTo.substr(1, scrollTo.length-1);
+            break;
+          default:
+            scrollToId = scrollTo;
+        }
 
-      if (scrollToId === '') return;
+        if (scrollToId === '') return;
 
-      if (hasTrickleButton) { // only set focus if there's a trickle button - see https://github.com/adaptlearning/adapt_framework/issues/2813
-        Adapt.a11y.focusFirst($('.' + scrollToId));
-      }
+        if (hasTrickleButton) { // only set focus if there's a trickle button - see https://github.com/adaptlearning/adapt_framework/issues/2813
+          Adapt.a11y.focusFirst($('.' + scrollToId));
+        }
 
-      if (isAutoScrollOff) return;
+        if (isAutoScrollOff) return;
 
-      var duration = fromModel.get('_trickle2')._scrollDuration || 500;
-      Adapt.scrollTo('.' + scrollToId, { duration: duration });
+        var duration = fromModel.get('_trickle2')._scrollDuration || 500;
+        Adapt.navigateToElement('.' + scrollToId, {duration: duration});
+
+      }, this), 150);
     },
 
     shouldScrollPage: function(fromModel) {
